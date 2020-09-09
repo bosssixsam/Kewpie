@@ -1,0 +1,122 @@
+.kitchen-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.kitchen-header h3 {
+  color: $special;
+}
+.kitchen-header p {
+  font-family: "rio-semibold";
+  font-size: 2rem;
+}
+
+// decor ---
+.decor03 {
+  position: relative;
+  width: 100vw;
+  z-index: 0;
+}
+.decor_4 {
+  position: absolute;
+  z-index: 2;
+  left: 2%;
+  margin-top: 10rem;
+}
+.decor_5 {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  margin-top: 30rem;
+  // bottom: 0;
+}
+
+// Kitchen ---
+.kitchen {
+  z-index: 3;
+}
+.kitchen-warpper {
+  display: flex;
+  justify-content: center;
+  // height: 50rem;
+}
+.kitchen-content {
+  // background-color: blue;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  padding-bottom: 5rem;
+}
+.kitchen-content h3 {
+  font-family: "rio-bold";
+  margin-top: 4rem;
+  text-align: center;
+  color: $brown;
+}
+.subcard {
+  margin: 4rem auto;
+  width: 50rem;
+  height: 6rem;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #ebdccb;
+  border-radius: 2rem;
+}
+.subcard h6 {
+  font-family: "rio-bold";
+  font-size: 2.5rem;
+}
+.rec_content {
+  margin: 0rem auto;
+  width: 50rem;
+  text-align: center;
+}
+.rec_img {
+  width: 90%;
+  margin: 0rem auto;
+}
+.kitchen-content button {
+  margin: 4rem auto 0rem;
+  width: 18rem;
+  height: 5rem;
+  background-color: $special;
+  border-width: 0;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  &:hover {
+    background-color: #cf181e;
+  }
+}
+
+// Chalk Board ---
+.video-warpper {
+  width: 35%;
+}
+.chalkboard {
+  margin: auto;
+  width: 95%;
+  background-image: url("../../images/bacground3.png");
+  // background-repeat: repeat-x;
+  border: 1rem solid #c7b299;
+  border-radius: 3rem;
+  padding-bottom: 4rem;
+}
+.chalkboard h3,
+.chalkboard h4,
+.chalkboard p {
+  padding: 1rem;
+  color: #ffffff;
+}
+.chalkboard h3 {
+  font-family: "icali-chalk";
+  font-size: 2.5rem;
+}
+
+.chalkboard video {
+  margin: 1rem 3rem;
+  width: 80%;
+  height: 20rem;
+}

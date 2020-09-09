@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---Set Up --- */
+@font-face {
+  font-family: "utm-cooper-black";
+  src: url("../fonts/UTM\ Cooper\ Black.ttf");
+}
+@font-face {
+  font-family: "rio";
+  src: url("../fonts/Linotte/Linotte\ Regular.ttf");
+}
+@font-face {
+  font-family: "rio-semibold";
+  src: url("../fonts/Linotte/Linotte\ Semi\ Bold.ttf");
+}
+@font-face {
+  font-family: "rio-bold";
+  src: url("../fonts/Linotte/Linotte\ Bold.ttf");
+}
+@font-face {
+  font-family: "icali-chalk";
+  src: url("../fonts/Full-iCiel-font/Font-iciel-viet-hoa/iCiel\ LaChicProShaded.otf");
+}
+
+//Color
+$special: #ed1c24;
+$hover: #ffc002;
+$brown: #603913;
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(../../images/02bg-texture.jpg);
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  width: 95vw;
+  margin: auto;
+  overflow: hidden;
+}
+.container {
+  width: 67.5vw;
+  margin: auto;
+  overflow: hidden;
+}
+
+// h2,
+// h3,
+// h4 {
+//   font-family: "utm-cooper-black";
+// }
+h1 {
+  font-family: "utm-cooper-black";
+  font-size: 4rem;
+  color: $special;
+}
+h2 {
+  font-family: "rio-bold";
+  font-size: 4rem;
+  color: $brown;
+}
+h3 {
+  font-family: "rio-semibold";
+  font-size: 2rem;
+}
+h4 {
+  font-family: "rio-bold";
+}
+h4,
+button {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+h6 {
+  font-size: 1.6rem;
+  font-family: "rio";
+  font-weight: normal;
+}
+p {
+  font-family: "rio";
+  font-size: 1.8rem;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+
+.page-break {
+  width: 65vw;
+  height: 0.1rem;
+  background-color: $brown;
+  margin: 2.5rem auto 5rem;
+}
+
+// import ---
+@import "./Header";
+@import "./Home/Carousel";
+@import "./Home/Product";
+@import "./Home/Scroll";
+@import "./Home/About";
+@import "./Home/Kitchen";
+@import "./Home/Others";
+
+// -- RESPONSIVE ---
+
+// max 900px---------------------------
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 80vw;
+  }
+}

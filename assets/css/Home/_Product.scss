@@ -1,0 +1,316 @@
+.product {
+  width: 100vw;
+  // margin-bottom: 10rem;
+  height: auto;
+  // overflow: hidden;
+}
+
+// Decor ---
+.decor01 {
+  position: relative;
+  width: 100vw;
+  // overflow-x: hidden;
+  // margin-top: -8rem;
+}
+.decor_1 {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  margin-top: -10rem;
+  width: 18rem;
+}
+.decor_2 {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  margin-top: -10rem;
+  width: 18rem;
+}
+
+.decor02 {
+  width: 100vw;
+  height: 35rem;
+  position: relative;
+  margin-top: -50rem;
+  z-index: -1;
+}
+.decor_3 {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  width: 22rem;
+}
+
+//-- product-header ---
+// .product .container {
+//   // background-color: yellow;
+// }
+
+.product .container .product-header {
+  width: 70%;
+  margin: 8rem auto;
+  text-align: center;
+}
+
+//-- product01 ------------
+.product-warpper {
+  width: 81.5%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin: 0rem auto 8rem;
+  // background-color: blue;
+}
+
+//-- product02 ------------
+
+.product-warpper02 {
+  width: 81.5%;
+  display: flex;
+  justify-content: center;
+  margin: 0rem auto 8rem;
+  // background-color: blue;
+}
+.product-image {
+  width: 50%;
+}
+.product-content-warpper {
+  width: 50%;
+}
+.product-content {
+  width: 80%;
+  padding-left: 2rem;
+  margin: auto;
+}
+.product-content h4 {
+  margin-bottom: 2rem;
+}
+.product-content h2 {
+  margin-bottom: 2rem;
+}
+
+//capacity
+.capacity {
+  margin-top: 3rem;
+  display: flex;
+}
+.capacity h6 {
+  margin-right: 0.8rem;
+  // font-size: 1.6rem;
+  // font-family: "rio";
+  // font-weight: normal;
+}
+.round-container {
+  display: flex;
+}
+.round-container .round {
+  margin-right: 0.6rem;
+  padding: 0.2rem 1.2rem;
+  width: auto;
+  height: 2.5rem;
+  border: 0.2rem solid $brown;
+  border-radius: 2rem;
+}
+.round p {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+// -- card -------
+.card {
+  margin-top: 3rem;
+  width: 100%;
+  height: 22rem;
+  background-color: #ffffff;
+}
+.card h6 {
+  font-family: "rio-bold";
+  padding-top: 1.6rem;
+  margin-left: 2.5rem;
+}
+.card-content-wrapper {
+  width: 91.5%;
+  margin: 1.5rem auto 2.5rem;
+  border-top-width: 0.5rem;
+  border-top-style: solid;
+  border-top-color: black;
+  border-bottom-width: 0.5rem;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+.card-content {
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  height: 3.5rem;
+}
+.card-content .p1 {
+  position: absolute;
+  left: 0rem;
+}
+.card-content .p2 {
+  position: absolute;
+  right: 0rem;
+}
+.card-break {
+  width: 100%;
+  height: 0.1rem;
+  background-color: black;
+}
+
+.product-content button {
+  cursor: pointer;
+  font-family: "rio-bold";
+  font-size: 1.8rem;
+  background-color: $special;
+  width: auto;
+  margin-top: 4rem;
+  padding: 2rem 2.5rem;
+  border: none;
+  border-radius: 0.8rem;
+  color: #ffffff;
+  &:hover {
+    background-color: #cf181e;
+  }
+}
+
+// -- Responsive ----------------------------
+
+// max 1258px---------------------------
+
+@media screen and (max-width: 1258px) {
+  //-- decor02 ---
+  .decor02 {
+    margin-top: -38rem;
+    z-index: -1;
+  }
+  .decor_3 {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    width: 14rem;
+  }
+
+  //-- product ---
+  .product-warpper {
+    width: 100%;
+  }
+  .product-warpper02 {
+    width: 100%;
+  }
+}
+
+// max 900px---------------------------
+
+@media screen and (max-width: 900px) {
+  //-- decor01 ---
+
+  .decor_1,
+  .decor_2 {
+    width: 12rem;
+    margin-top: -8rem;
+  }
+
+  //-- decor02 ---
+  .decor02 {
+    width: 100vw;
+    height: 20rem;
+    position: relative;
+    margin-top: -35rem;
+    z-index: -1;
+  }
+  .decor_3 {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    width: 12rem;
+  }
+
+  //-- product-header ---
+
+  .product .container .product-header {
+    width: 90%;
+    margin: 4rem auto;
+    // text-align: center;
+  }
+
+  // -- porduct ---
+
+  .product-warpper {
+    width: 100%;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .product-warpper02 {
+    width: 100%;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .product-image {
+    width: 80%;
+  }
+  .product-content-warpper {
+    width: 100%;
+  }
+}
+
+// max 485px---------------------------
+
+@media screen and (max-width: 485px) {
+  //-- decor01 ---
+  .decor_1,
+  .decor_2 {
+    width: 7rem;
+    margin-top: -6rem;
+  }
+
+  .decor02 {
+    display: none;
+  }
+
+  //-- product-header ---
+  .product .container .product-header {
+    width: 100%;
+    margin: 4rem auto;
+    // text-align: center;
+  }
+  .product-header h1 {
+    font-size: 2.5rem;
+  }
+  .product-header h3 {
+    font-size: 1.6rem;
+  }
+
+  //-- product ---
+  .product-content {
+    width: 100%;
+  }
+  .product-content h4 {
+    font-size: 1.8rem;
+  }
+  .product-content h2 {
+    font-size: 2.8rem;
+  }
+
+  .product-content p {
+    font-size: 1.3rem;
+  }
+
+  // -- capacity ---
+  .capacity {
+    display: flex;
+    flex-direction: column;
+  }
+  .capacity h6 {
+    font-size: 1.3rem;
+  }
+  .round-container .round {
+    padding: 0.1rem 0.5rem;
+  }
+  .round p {
+    font-size: 1.2rem;
+  }
+}

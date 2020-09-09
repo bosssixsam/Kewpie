@@ -1,0 +1,271 @@
+body {
+  position: relative;
+}
+header {
+  width: 100vw;
+  height: 12vh;
+  background-color: $special;
+  position: fixed;
+  top: 0;
+  z-index: 4;
+}
+
+.navigation-wrapper {
+  display: flex;
+  margin: auto;
+  width: 95vw;
+  align-items: center;
+  height: 12vh;
+  z-index: 4;
+}
+.nav {
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  // position: relative;
+}
+// .logo {
+//   margin-left: 8rem;
+// }
+
+.navigation {
+  // background-color: violet;
+  width: 67.5vw;
+  height: 12vh;
+  margin-left: 7rem;
+  margin-right: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navigation > li > a {
+  font-family: "rio-bold";
+  font-size: 1.5rem;
+  color: #ffffff;
+  padding-bottom: 0.5rem;
+  &:hover {
+    color: $hover;
+    border-bottom-style: solid;
+    border-bottom-width: 0.2rem;
+    border-bottom-color: $hover;
+  }
+}
+
+.lang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // margin-left: 10rem;
+  font-size: 1.5rem;
+}
+.lang > .icon {
+  width: 4rem;
+  height: 4rem;
+  border: 0.15rem solid #ffffff;
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.4rem;
+  cursor: pointer;
+  &:hover {
+    color: $hover;
+    border-color: $hover;
+  }
+}
+
+// Burger ---
+.burger {
+  display: none;
+  margin-left: auto;
+  cursor: pointer;
+}
+.burger .line {
+  width: 5rem;
+  height: 0.5rem;
+  background-color: #ffffff;
+  margin: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-nav {
+  display: none;
+}
+
+// -- Responsive ----------------------------
+// max 1300px---------------------------
+@media screen and (max-width: 1300px) {
+  .navigation {
+    margin-left: 5rem;
+    margin-right: 3rem;
+  }
+}
+
+// max 1164px---------------------------
+@media screen and (max-width: 1164px) {
+  .navigation {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
+
+// max 768px---------------------------
+@media screen and (max-width: 900px) {
+  .navigation-wrapper {
+    width: 100vw;
+    padding: 0rem 1rem;
+    background-color: $special;
+  }
+  .nav {
+    top: 100%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: $special;
+    width: 100vw;
+    height: 88vh;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in;
+    z-index: -1;
+    // background-color: burlywood;
+  }
+  .navigation {
+    // background-color: violet;
+    width: 100vw;
+    height: 60vh;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .navigation > li > a {
+    opacity: 0;
+  }
+  .lang > .icon {
+    opacity: 0;
+  }
+
+  // -- contact-nav ---
+  .contact-nav {
+    margin-top: 5rem;
+    border-top-width: 0.4rem;
+    border-top-style: solid;
+    border-top-color: #c40008;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    // background-color: aqua;
+  }
+  .contact-wrapper {
+    width: 95%;
+    height: 80%;
+    // background-color: burlywood;
+    display: flex;
+  }
+  .contact-content {
+    width: 50%;
+    height: 100%;
+    // background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .fa-phone {
+    font-size: 4rem;
+    color: $special;
+    background-color: #ffffff;
+    padding: 1.5rem 1.8rem;
+    border-radius: 50%;
+  }
+  .contact-content p {
+    font-family: "rio-bold";
+    color: #ffffff;
+    width: 50%;
+    font-size: 2.5rem;
+  }
+
+  .contact-number {
+    width: 50%;
+    height: 100%;
+    // background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-number p {
+    text-align: center;
+    width: 100%;
+    font-family: "rio-bold";
+    color: $hover;
+    font-size: 4rem;
+  }
+
+  //-- burger ---
+  .burger {
+    display: block;
+  }
+
+  //-- active --
+  .nav.active {
+    transform: translateY(0%);
+  }
+}
+
+// max 430px---------------------------
+@media screen and (max-width: 430px) {
+  .logo {
+    width: 12rem;
+  }
+
+  //-- burger ---
+  .burger .line {
+    width: 3rem;
+  }
+
+  // -- contact-nav ---
+  .fa-phone {
+    font-size: 3rem;
+    padding: 1rem 1.2rem;
+    border-radius: 50%;
+  }
+  .contact-content p {
+    font-family: "rio-bold";
+    color: #ffffff;
+    width: 60%;
+    font-size: 2rem;
+  }
+
+  .contact-number p {
+    font-size: 3rem;
+  }
+}
+
+// Animation --
+
+@keyframes navfade {
+  from {
+    opacity: 0;
+    transform: translateX(5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-0.7rem, 1.4rem);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-0.7rem, -1.4rem);
+}
