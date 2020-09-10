@@ -37,7 +37,7 @@ html {
 }
 
 body {
-  background-image: url(../../images/02bg-texture.jpg);
+  background-image: url("../Images/02bg-texture.jpg");
   overflow-x: hidden;
 }
 
@@ -119,7 +119,7 @@ body {
 
 header {
   width: 100vw;
-  height: 12vh;
+  height: 15vh;
   background-color: #ed1c24;
   position: fixed;
   top: 0;
@@ -135,12 +135,12 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 12vh;
+  height: 15vh;
   z-index: 4;
 }
 
 .nav {
-  height: 12vh;
+  height: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,7 +152,7 @@ header {
 
 .navigation {
   width: 67.5vw;
-  height: 12vh;
+  height: 15vh;
   margin-left: 7rem;
   margin-right: 5rem;
   display: -webkit-box;
@@ -316,11 +316,11 @@ header {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    height: 20%;
+    height: 30%;
   }
   .contact-wrapper {
     width: 95%;
-    height: 80%;
+    height: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -446,7 +446,7 @@ header {
 .carousel {
   width: 100vw;
   height: 70vh;
-  margin-top: 12vh;
+  margin-top: 15vh;
   position: relative;
   overflow: hidden;
 }
@@ -527,19 +527,19 @@ header {
 }
 
 .slide:first-child {
-  background: url("../../images/banner_01.jpg") no-repeat center top/cover;
+  background: url("../Images/banner_01.jpg") no-repeat center top/cover;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .slide:nth-child(2) {
-  background: url("../../images/banner_02.jpg") no-repeat center top/cover;
+  background: url("../Images/banner_02.jpg") no-repeat center top/cover;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .slide:nth-child(3) {
-  background: url("../../images/banner_03.jpg") no-repeat center top/cover;
+  background: url("../Images/banner_03.jpg") no-repeat center top/cover;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -606,6 +606,25 @@ header {
   }
   .next {
     top: 40%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .content {
+    width: 65%;
+  }
+  .content h1 {
+    font-size: 1.8rem;
+  }
+  .content h3 {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+  }
+  .content button {
+    height: 4rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 0.8rem;
   }
 }
 
@@ -872,8 +891,8 @@ header {
 @media screen and (max-width: 485px) {
   .decor_1,
   .decor_2 {
-    width: 7rem;
-    margin-top: -6rem;
+    width: 6.5rem;
+    margin-top: -4rem;
   }
   .decor02 {
     display: none;

@@ -2,7 +2,7 @@
 .carousel {
   width: 100vw;
   height: 70vh;
-  margin-top: 12vh;
+  margin-top: 15vh;
   position: relative;
   // background-color: blue;
   overflow: hidden;
@@ -72,15 +72,15 @@
 }
 
 .slide:first-child {
-  background: url("../../images/banner_01.jpg") no-repeat center top/cover;
+  background: url("../Images/banner_01.jpg") no-repeat center top/cover;
   object-fit: cover;
 }
 .slide:nth-child(2) {
-  background: url("../../images/banner_02.jpg") no-repeat center top/cover;
+  background: url("../Images/banner_02.jpg") no-repeat center top/cover;
   object-fit: cover;
 }
 .slide:nth-child(3) {
-  background: url("../../images/banner_03.jpg") no-repeat center top/cover;
+  background: url("../Images/banner_03.jpg") no-repeat center top/cover;
   object-fit: cover;
 }
 
@@ -156,5 +156,25 @@
   }
   .next {
     top: 40%;
+  }
+}
+
+// max 425px ---
+@media screen and (max-width: 426px) {
+  .content {
+    width: 65%;
+  }
+  .content h1 {
+    font-size: 1.8rem;
+  }
+  .content h3 {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+  }
+  .content button {
+    height: 4rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 0.8rem;
   }
 }
