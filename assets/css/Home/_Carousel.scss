@@ -86,8 +86,8 @@
 
 // -- Responsive ----------------------------
 
-// max 11420px ---------------------------
-@media screen and (max-width: 1142px) {
+// max 1024px ---------------------------
+@media screen and (max-width: 1024px) {
   .content h1 {
     font-size: 2.6rem;
   }
@@ -129,6 +129,9 @@
   .next {
     top: 40%;
   }
+}
+
+@media screen and (max-height: 1024px) {
 }
 
 // max 548px---------------------------

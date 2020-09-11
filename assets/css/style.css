@@ -544,7 +544,7 @@ header {
      object-fit: cover;
 }
 
-@media screen and (max-width: 1142px) {
+@media screen and (max-width: 1024px) {
   .content h1 {
     font-size: 2.6rem;
   }
@@ -642,31 +642,16 @@ header {
   position: absolute;
   z-index: 2;
   left: 0;
-  margin-top: -10rem;
-  width: 18rem;
+  margin-top: -5rem;
+  width: 15rem;
 }
 
 .decor_2 {
   position: absolute;
   z-index: 2;
   right: 0;
-  margin-top: -10rem;
-  width: 18rem;
-}
-
-.decor02 {
-  width: 100vw;
-  height: 35rem;
-  position: relative;
-  margin-top: -50rem;
-  z-index: -1;
-}
-
-.decor_3 {
-  position: absolute;
-  z-index: 2;
-  right: 0;
-  width: 22rem;
+  margin-top: -5rem;
+  width: 15rem;
 }
 
 .product .container .product-header {
@@ -939,85 +924,132 @@ header {
   }
 }
 
-.animate-product {
+.scroll {
   width: 100vw;
   height: auto;
+  margin-bottom: 8rem;
 }
 
-.animate-product .product-container {
-  height: 50rem;
+.scroll-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.animate-product {
+  width: 50%;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.animate {
+  margin-top: 6rem;
+  margin-left: -30rem;
+}
+
+.scroll-content {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.animate-container {
-  width: 50%;
-  position: relative;
-  overflow: hidden;
-}
-
-.animate {
-  position: absolute;
-  top: 25%;
-  left: -60%;
-}
-
-.animate-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 50%;
-}
-
-.animate-content .content_warpper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -5%;
   background-color: #4c296f;
-  width: 90%;
-  border-radius: 2rem;
+  z-index: 1;
 }
 
-.animate-content .main-content {
-  margin-top: 4rem;
-  padding: 2rem;
+.scroll-content-wrapper {
+  width: 60%;
 }
 
-.animate-content .main-content h3 {
-  color: #ffffff;
-  font-size: 3rem;
-}
-
-.animate-content .main-content p {
-  color: #ffffff;
-  font-size: 2rem;
-}
-
-.animate-content .sub-content {
-  padding: 2rem;
+.scroll-content-wrapper h2,
+.scroll-content-wrapper p {
   color: #ffffff;
 }
 
-.animate-content .sub-content .round {
-  width: auto;
-  border-color: #723da6;
+.scroll-content-wrapper h2 {
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+}
+
+.scroll-content-wrapper .capacity {
+  color: #ffffff;
+}
+
+.scroll-content-wrapper .round-container .round {
+  border-color: #ffffff;
   background-color: #371d52;
 }
 
-.animate-content .sub-content .round p {
-  padding: 0rem 1rem;
+.scroll-content-wrapper button {
+  cursor: pointer;
+  font-family: "rio-bold";
+  font-size: 1.6rem;
+  background-color: #ffffff;
+  width: auto;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+  padding: 1.5rem 1.8rem;
+  border: none;
+  border-radius: 0.8rem;
+  color: #4c296f;
 }
 
-.animate-content button {
-  margin: 1rem 2rem 4rem;
-  width: 14rem;
-  height: 4rem;
-  background-color: #ffffff;
-  border-width: 0;
-  border-radius: 1rem;
-  color: #371d52;
-  font-weight: bold;
+.scroll-content-wrapper button:hover {
+  background-color: #371d52;
+}
+
+@media screen and (max-width: 768px) {
+  .scroll-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .animate-product {
+    margin-bottom: -8rem;
+    width: 100%;
+  }
+  .animate {
+    margin-left: -35rem;
+  }
+  .scroll-content {
+    margin-left: 0;
+    width: 100%;
+  }
+  .scroll-content-wrapper {
+    text-align: center;
+  }
+  .scroll-content-wrapper .capacity {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .scroll .container {
+    width: 100vw;
+  }
+  .animate {
+    margin-left: -80rem;
+  }
+  .scroll-content-wrapper {
+    width: 80%;
+  }
+  .scroll-content-wrapper h2 {
+    font-size: 2.4rem;
+  }
+  .scroll-content-wrapper p {
+    font-size: 1.4rem;
+  }
+  .round-container {
+    margin: auto;
+  }
 }
 
 .about {

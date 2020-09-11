@@ -56,13 +56,13 @@ tween.add(
 const controller = new ScrollMagic.Controller();
 
 const scene = new ScrollMagic.Scene({
-  triggerElement: ".animate-product",
+  triggerElement: ".scroll",
   duration: 1200,
-  triggerHook: 0.22,
+  triggerHook: 0.8,
 })
   .setTween(tween)
   // .addIndicators()
-  .setPin(".animate-product")
+  // .setPin(".scroll-wrapper")
   .addTo(controller);
 
 // ---------- Hamburger ----------------
