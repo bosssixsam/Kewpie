@@ -74,8 +74,7 @@ h4 {
   font-family: "rio-bold";
 }
 
-h4,
-button {
+h4 {
   font-size: 2rem;
 }
 
@@ -103,7 +102,20 @@ a {
 }
 
 button {
+  font-family: "rio-bold";
+  font-size: 1.8rem;
+  color: #ffffff;
   cursor: pointer;
+  border: none;
+  border-radius: 1.2rem;
+  width: auto;
+  height: auto;
+  background-color: #ed1c24;
+  padding: 2rem 2.4rem;
+}
+
+button:hover {
+  background-color: #cf181e;
 }
 
 .page-break {
@@ -897,7 +909,6 @@ header {
 .scroll {
   width: 100vw;
   height: auto;
-  margin-bottom: 8rem;
 }
 
 .scroll-wrapper {
@@ -1016,7 +1027,7 @@ header {
     width: 100vw;
   }
   .animate {
-    margin-left: -80rem;
+    margin-left: -65rem;
   }
   .scroll-content-wrapper {
     width: 80%;
@@ -1035,12 +1046,19 @@ header {
 .whychoose {
   width: 100vw;
   height: 50rem;
-  background-color: grey;
+  margin-top: 8rem;
 }
 
 .whychoose-wrapper {
   background: url(../images/why_choose.png) no-repeat center top/cover;
   width: 90%;
+  height: 100%;
+  margin: auto;
+  border-radius: 2rem;
+}
+
+.whychoose-content {
+  width: 50%;
   height: 100%;
   margin: auto;
   display: -webkit-box;
@@ -1056,33 +1074,48 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0rem 35rem;
-  border-radius: 2rem;
 }
 
-.whychoose-wrapper h1,
-.whychoose-wrapper h3 {
+.whychoose-content h1,
+.whychoose-content h3 {
   text-align: center;
   z-index: 2;
   color: #ffffff;
 }
 
-.whychoose-wrapper button {
-  font-family: "rio-bold";
-  width: auto;
-  height: auto;
-  margin-top: 4rem;
-  padding: 2rem 2.4rem;
-  font-size: 1.8rem;
-  border: none;
-  background-color: #ed1c24;
-  border-radius: 0.8rem;
-  color: #ffffff;
-  z-index: 2;
+.whychoose-content h1 {
+  margin-bottom: 2rem;
 }
 
-.whychoose-wrapper button:hover {
-  background-color: #cf181e;
+.whychoose-content button {
+  margin-top: 4rem;
+}
+
+@media screen and (max-width: 425px) {
+  .whychoose {
+    height: auto;
+    margin-top: 0rem;
+  }
+  .whychoose-wrapper {
+    width: 100%;
+    border-radius: 0rem;
+  }
+  .whychoose-content {
+    width: 80%;
+  }
+  .whychoose-content h1 {
+    margin-top: 5rem;
+    font-size: 2.2rem;
+  }
+  .whychoose-content h3 {
+    font-size: 1.3rem;
+  }
+  .whychoose-content button {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.4rem;
+  }
 }
 
 .kitchen-header {

@@ -1,92 +1,72 @@
-// .whychoose {
-//   width: 100vw;
-//   height: 50rem;
-//   background-color: grey;
-// }
+.whychoose {
+  width: 100vw;
+  height: 50rem;
+  margin-top: 8rem;
+}
 
-// .whychoose-wrapper {
-//   background: url(../images/why_choose.png) no-repeat center top/cover;
-//   width: 90%;
-//   height: 100%;
-//   margin: auto;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   padding: 0rem 35rem;
-//   border-radius: 2rem;
-// }
+.whychoose-wrapper {
+  background: url(../images/why_choose.png) no-repeat center top/cover;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  border-radius: 2rem;
+}
 
-// .whychoose-wrapper h1,
-// .whychoose-wrapper h3 {
-//   text-align: center;
-//   z-index: 2;
-//   color: #ffffff;
-// }
+.whychoose-content {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-// .whychoose-wrapper button {
-//   font-family: "rio-bold";
-//   width: auto;
-//   height: auto;
-//   margin-top: 4rem;
-//   padding: 2rem 2.4rem;
-//   font-size: 1.8rem;
-//   border: none;
-//   background-color: $special;
-//   border-radius: 0.8rem;
-//   color: #ffffff;
-//   z-index: 2;
-//   &:hover {
-//     background-color: #cf181e;
-//   }
-// }
+.whychoose-content h1,
+.whychoose-content h3 {
+  text-align: center;
+  z-index: 2;
+  color: #ffffff;
+}
 
-// .about {
-//   margin: 5rem 0rem 3rem;
-//   width: 100vw;
-//   height: 70vh;
-// }
-// .why-choose {
-//   position: relative;
-//   width: 90vw;
-//   height: 90%;
-//   // margin: 0rem 12.5rem;
-//   margin: auto;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-// }
-// .whychoose_img {
-//   position: absolute;
-//   width: 100%;
-//   z-index: 0;
-// }
+.whychoose-content h1 {
+  margin-bottom: 2rem;
+}
+.whychoose-content button {
+  margin-top: 4rem;
+}
 
-// .why-choose h3 {
-//   text-align: center;
-//   color: #ffffff;
-//   margin-bottom: 2.5rem;
-//   z-index: 2;
-// }
-// .why-choose p {
-//   font-size: 2.5rem;
-//   text-align: center;
-//   color: #ffffff;
-//   margin-bottom: 2.5rem;
-//   z-index: 2;
-// }
-// .why-choose button {
-//   width: 18rem;
-//   height: 6rem;
-//   background-color: $special;
-//   border-width: 0;
-//   border-radius: 0.5rem;
-//   color: #ffffff;
-//   font-weight: bold;
-//   font-size: 1.8rem;
-//   z-index: 2;
-//   &:hover {
-//     background-color: #cf181e;
-//   }
-// }
+// -- Responsive ----------------------------
+
+// max 425px---------------------------
+@media screen and (max-width: 425px) {
+  .whychoose {
+    height: auto;
+    margin-top: 0rem;
+  }
+
+  .whychoose-wrapper {
+    width: 100%;
+    border-radius: 0rem;
+  }
+
+  .whychoose-content {
+    width: 80%;
+  }
+
+  .whychoose-content h1 {
+    margin-top: 5rem;
+    font-size: 2.2rem;
+  }
+
+  .whychoose-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .whychoose-content button {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.4rem;
+  }
+}

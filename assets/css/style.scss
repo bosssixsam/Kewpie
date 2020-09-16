@@ -74,8 +74,7 @@ h3 {
 h4 {
   font-family: "rio-bold";
 }
-h4,
-button {
+h4 {
   font-size: 2rem;
 }
 
@@ -98,7 +97,20 @@ a {
   text-decoration: none;
 }
 button {
+  font-family: "rio-bold";
+  font-size: 1.8rem;
+  color: #ffffff;
   cursor: pointer;
+  border: none;
+  border-radius: 1.2rem;
+  width: auto;
+  height: auto;
+  background-color: $special;
+  padding: 2rem 2.4rem;
+
+  &:hover {
+    background-color: #cf181e;
+  }
 }
 
 .page-break {
