@@ -479,7 +479,7 @@ header {
 }
 
 .content {
-  width: 40%;
+  width: 50%;
 }
 
 .content h3 {
@@ -489,14 +489,14 @@ header {
 .content button {
   margin-top: 5rem;
   width: auto;
-  height: 5rem;
-  padding: 1.5rem 2.5rem;
+  height: auto;
+  padding: 2rem 2.4rem;
   border: none;
   background-color: #ed1c24;
   border-radius: 0.8rem;
   color: #ffffff;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .content button:hover {
@@ -544,50 +544,12 @@ header {
      object-fit: cover;
 }
 
-@media screen and (max-width: 1024px) {
-  .content h1 {
-    font-size: 2.6rem;
-  }
-  .content h3 {
-    margin-top: 2rem;
-    font-size: 2rem;
-  }
-  .content button {
-    height: 4rem;
-    font-size: 1.6rem;
-    margin-top: 2rem;
-    padding: 1rem;
-  }
-}
-
-@media screen and (max-width: 900px) {
+@media only screen and (max-width: 548px) {
   .slide .container {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .content {
-    width: 50%;
-  }
-  .content h1 {
-    font-size: 2.6rem;
-  }
-  .content h3 {
-    margin-top: 1.2rem;
-    font-size: 2rem;
-  }
-  .content button {
-    height: 4rem;
-    font-size: 1.6rem;
-    margin-top: 1.6rem;
-    padding: 1rem;
-  }
-  .next {
-    top: 40%;
-  }
-}
-
-@media screen and (max-width: 548px) {
   .content {
     width: 70%;
   }
@@ -599,10 +561,10 @@ header {
     font-size: 1.6rem;
   }
   .content button {
-    height: 4rem;
+    height: auto;
     font-size: 1.2rem;
     margin-top: 1.2rem;
-    padding: 1rem;
+    padding: 1.2rem;
   }
   .next {
     top: 40%;
@@ -621,10 +583,16 @@ header {
     font-size: 1.4rem;
   }
   .content button {
-    height: 4rem;
+    height: auto;
     font-size: 1.2rem;
-    margin-top: 1rem;
+    margin-top: 1.2rem;
     padding: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 426px) and (min-height: 736px) {
+  .carousel {
+    height: 50vh;
   }
 }
 
@@ -744,6 +712,8 @@ header {
   width: 100%;
   height: 22rem;
   background-color: #ffffff;
+  -webkit-box-shadow: 0rem 0.2rem 0.2rem grey;
+          box-shadow: 0rem 0.2rem 0.2rem grey;
 }
 
 .card h6 {
@@ -945,7 +915,7 @@ header {
 
 .animate {
   margin-top: 6rem;
-  margin-left: -30rem;
+  margin-left: -50rem;
 }
 
 .scroll-content {
@@ -1002,7 +972,17 @@ header {
 }
 
 .scroll-content-wrapper button:hover {
+  color: #ffffff;
   background-color: #371d52;
+}
+
+@media screen and (max-width: 1024px) {
+  .scroll-content-wrapper h2 {
+    margin-top: 4rem;
+  }
+  .scroll-content-wrapper button {
+    margin-bottom: 4rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1013,7 +993,7 @@ header {
             flex-direction: column;
   }
   .animate-product {
-    margin-bottom: -8rem;
+    margin-bottom: -4rem;
     width: 100%;
   }
   .animate {
@@ -1052,16 +1032,16 @@ header {
   }
 }
 
-.about {
-  margin: 5rem 0rem 3rem;
+.whychoose {
   width: 100vw;
-  height: 70vh;
+  height: 50rem;
+  background-color: grey;
 }
 
-.why-choose {
-  position: relative;
-  width: 90vw;
-  height: 90%;
+.whychoose-wrapper {
+  background: url(../images/why_choose.png) no-repeat center top/cover;
+  width: 90%;
+  height: 100%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1076,42 +1056,32 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0rem 35rem;
+  border-radius: 2rem;
 }
 
-.whychoose_img {
-  position: absolute;
-  width: 100%;
-  z-index: 0;
-}
-
-.why-choose h3 {
+.whychoose-wrapper h1,
+.whychoose-wrapper h3 {
   text-align: center;
-  color: #ffffff;
-  margin-bottom: 2.5rem;
   z-index: 2;
+  color: #ffffff;
 }
 
-.why-choose p {
-  font-size: 2.5rem;
-  text-align: center;
-  color: #ffffff;
-  margin-bottom: 2.5rem;
-  z-index: 2;
-}
-
-.why-choose button {
-  width: 18rem;
-  height: 6rem;
-  background-color: #ed1c24;
-  border-width: 0;
-  border-radius: 0.5rem;
-  color: #ffffff;
-  font-weight: bold;
+.whychoose-wrapper button {
+  font-family: "rio-bold";
+  width: auto;
+  height: auto;
+  margin-top: 4rem;
+  padding: 2rem 2.4rem;
   font-size: 1.8rem;
+  border: none;
+  background-color: #ed1c24;
+  border-radius: 0.8rem;
+  color: #ffffff;
   z-index: 2;
 }
 
-.why-choose button:hover {
+.whychoose-wrapper button:hover {
   background-color: #cf181e;
 }
 

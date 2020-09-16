@@ -22,7 +22,7 @@
 }
 .animate {
   margin-top: 6rem;
-  margin-left: -30rem;
+  margin-left: -50rem;
   // position: absolute;
   // top: 25%;
   // left: -60%;
@@ -71,11 +71,24 @@
   border-radius: 0.8rem;
   color: #4c296f;
   &:hover {
+    color: #ffffff;
     background-color: #371d52;
   }
 }
 
 // -- Responsive ----------------------------
+
+// max width 1024px -------------------
+@media screen and (max-width: 1024px) {
+  // .scroll-content-wrapper ------
+
+  .scroll-content-wrapper h2 {
+    margin-top: 4rem;
+  }
+  .scroll-content-wrapper button {
+    margin-bottom: 4rem;
+  }
+}
 
 // max 768px---------------------------
 @media screen and (max-width: 768px) {
@@ -85,7 +98,7 @@
 
   //-- scroll ---
   .animate-product {
-    margin-bottom: -8rem;
+    margin-bottom: -4rem;
     width: 100%;
   }
   .animate {

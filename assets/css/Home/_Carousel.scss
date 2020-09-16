@@ -29,7 +29,7 @@
   align-items: center;
 }
 .content {
-  width: 40%;
+  width: 50%;
 }
 .content h3 {
   margin-top: 4rem;
@@ -37,17 +37,17 @@
 .content button {
   margin-top: 5rem;
   width: auto;
-  height: 5rem;
-  padding: 1.5rem 2.5rem;
+  height: auto;
+  padding: 2rem 2.4rem;
   border: none;
   background-color: $special;
   border-radius: 0.8rem;
   color: #ffffff;
   font-weight: bold;
-  font-size: 2rem;
-}
-.content button:hover {
-  background-color: #cf181e;
+  font-size: 1.8rem;
+  &:hover {
+    background-color: #cf181e;
+  }
 }
 
 .next {
@@ -86,61 +86,89 @@
 
 // -- Responsive ----------------------------
 
-// max 1024px ---------------------------
-@media screen and (max-width: 1024px) {
-  .content h1 {
-    font-size: 2.6rem;
-  }
-  .content h3 {
-    margin-top: 2rem;
-    font-size: 2rem;
-  }
-  .content button {
-    height: 4rem;
-    font-size: 1.6rem;
-    margin-top: 2rem;
-    padding: 1rem;
-  }
-}
+// //----------------------- TABLET ----------------------------
+// // max 1024px ---------------------------
+// @media only screen and (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
+//   //-- Content ---
 
-// max 900px ---------------------------
-@media screen and (max-width: 900px) {
+//   .content {
+//     width: 60%;
+//   }
+//   .content h1 {
+//     font-size: 4rem;
+//   }
+//   .content h3 {
+//     margin-top: 2rem;
+//     font-size: 2.4rem;
+//   }
+//   .content button {
+//     height: auto;
+//     font-size: 2rem;
+//     margin-top: 2rem;
+//     padding: 1.6rem;
+//   }
+// }
+
+// // max 900px ---------------------------
+// @media screen and (max-width: 900px) {
+//   //-- Slide content ---
+
+//   .slide .container {
+//     align-items: flex-start;
+//   }
+//   .content {
+//     width: 50%;
+//   }
+//   .content h1 {
+//     font-size: 2.6rem;
+//   }
+//   .content h3 {
+//     margin-top: 1.2rem;
+//     font-size: 2rem;
+//   }
+//   .content button {
+//     height: auto;
+//     font-size: 1.6rem;
+//     margin-top: 1.6rem;
+//     padding: 1rem;
+//   }
+//   .next {
+//     top: 40%;
+//   }
+// }
+
+// // max 768px ---------------------------
+// @media screen and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+//   .slide .container {
+//     align-items: flex-start;
+//   }
+//   .content {
+//     width: 60%;
+//   }
+//   .content h1 {
+//     font-size: 4rem;
+//   }
+//   .content h3 {
+//     margin-top: 1.2rem;
+//     font-size: 2.5rem;
+//   }
+//   .content button {
+//     height: auto;
+//     font-size: 2rem;
+//     padding: 1.6rem;
+//   }
+// }
+
+// @media only screen and (max-width: 768px) and (max-height: 1024px) and (orientation: landscape) {
+// }
+
+// max 548px---------------------------
+@media only screen and (max-width: 548px) {
   //-- Slide content ---
 
   .slide .container {
     align-items: flex-start;
   }
-  .content {
-    width: 50%;
-  }
-  .content h1 {
-    font-size: 2.6rem;
-  }
-  .content h3 {
-    margin-top: 1.2rem;
-    font-size: 2rem;
-  }
-  .content button {
-    height: 4rem;
-    font-size: 1.6rem;
-    margin-top: 1.6rem;
-    padding: 1rem;
-  }
-  .next {
-    top: 40%;
-  }
-}
-
-@media screen and (max-height: 1024px) {
-}
-
-// max 548px---------------------------
-@media screen and (max-width: 548px) {
-  //-- Slide content ---
-
-  // .slide .container {
-  //   align-items: flex-start;
-  // }
   .content {
     width: 70%;
   }
@@ -152,10 +180,10 @@
     font-size: 1.6rem;
   }
   .content button {
-    height: 4rem;
+    height: auto;
     font-size: 1.2rem;
     margin-top: 1.2rem;
-    padding: 1rem;
+    padding: 1.2rem;
   }
   .next {
     top: 40%;
@@ -164,6 +192,8 @@
 
 // max 425px ---
 @media screen and (max-width: 426px) {
+  //-- carousel ---
+
   .content {
     width: 65%;
   }
@@ -175,9 +205,14 @@
     font-size: 1.4rem;
   }
   .content button {
-    height: 4rem;
+    height: auto;
     font-size: 1.2rem;
-    margin-top: 1rem;
+    margin-top: 1.2rem;
     padding: 0.8rem;
+  }
+}
+@media screen and (max-width: 426px) and (min-height: 736px) {
+  .carousel {
+    height: 50vh;
   }
 }
